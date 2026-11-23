@@ -117,7 +117,7 @@ const A={
  ssh:{sid:1000001,msg:"LOCAL SSH brute-force urinishi",n:25,ms:220,pk:()=>"SSH Failed password for root"},
  icmp:{sid:1000003,msg:"LOCAL ICMP flood",n:40,ms:90,pk:()=>"ICMP echo request"},
  sqli:{sid:1000004,msg:"LOCAL SQL injection urinishi",n:20,ms:260,pk:()=>"GET /?id=1' OR '1'='1"},
- xss:{sid:1000005,msg:"LOCAL XSS urinishi",n:20,ms:260,pk:()=>"GET /?q=<script>alert(1)</script>"}
+ xss:{sid:1000005,msg:"LOCAL XSS urinishi",n:20,ms:260,pk:()=>"GET /?q=<scr"+"ipt>alert(1)<"+"/scr"+"ipt>"}
 };
 const st={ev:0,al:0,ok:0},hits={},blocked={},running=new Set();
 const ports=[21,22,23,25,53,80,110,139,443,445,3306,3389,8080];
